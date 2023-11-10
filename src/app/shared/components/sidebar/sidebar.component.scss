@@ -1,0 +1,36 @@
+div.side-bar
+{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+    article
+    {
+        position: fixed;
+        top: 0;
+        height: 100vb;
+        right: 0;
+        width: 80%;
+        background-color: var(--bg-200);
+        padding: var(--margin-l);
+        justify-content: flex-start;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+
+        a.back
+        {
+            padding: 0 0 var(--margin-m);
+            font-size: var(--text-s);
+
+            display: block;
+        }
+        a.back + *
+        {
+            flex: 1;
+            overflow: auto;
+
+        }
+    }
+}

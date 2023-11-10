@@ -1,0 +1,24 @@
+<article>
+  <div>
+    <h2>
+      Necesitarás a tu Dream Team
+    </h2>
+    <p>
+      ¿Tienes ya a tu equipo de trabajo?
+    </p>
+  </div>
+</article>
+<div>
+  <app-list-secondaries-buttons [buttons]="buttons"
+    (onButtonClicked)="onButtonClicked($event)"></app-list-secondaries-buttons>
+
+  <a (click)="onShowSlide(true)"> No sé qué perfiles necesito</a>
+
+</div>
+<footer>
+  <a [routerLink]="['/welcome']" routerLinkActive="router-link-active">Configurar más adelante</a>
+
+</footer>
+<app-sidebar (onCloseSideBar)="onShowSlide(false)" *ngIf="showSlide">
+  <app-roles></app-roles>
+</app-sidebar>

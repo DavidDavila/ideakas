@@ -1,0 +1,12 @@
+.project-commons
+{
+    padding: var(--margin-l);
+    margin: var(--margin-l) 0;
+    border: .1875rem solid var(--text-200);
+    border-radius: var(--margin-l);
+    color: var(--text-100);
+}
+.project-box
+{
+    @extend .project-commons;
+}

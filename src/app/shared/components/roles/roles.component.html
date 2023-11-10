@@ -1,0 +1,16 @@
+<header>
+  <h4>Perfiles habituales</h4>
+
+</header>
+<p>Estos son los roles más frecuentes en las startups, no quiere decir que tu proyecto necesite todos</p>
+<ul>
+  <ng-container *ngFor="let role of roles">
+    <li>
+      <h5>{{role.mean}}
+        <h6>{{role.name}}</h6>
+      </h5>
+
+      <p>{{role.description}}</p>
+    </li>
+  </ng-container>
+</ul>

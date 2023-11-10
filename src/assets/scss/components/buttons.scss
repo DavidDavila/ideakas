@@ -1,0 +1,101 @@
+button
+{
+  background-color: var(--primary-100);
+  color: var(--bg-100);
+  width: max-content;
+  max-width: 100%;
+  text-align: center;
+  padding: var(--margin-m) var(--margin-xxl);
+  font-size: var(--text-m);
+  border: 0;
+  outline: none;
+  border-radius: var(--margin-l);
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  gap: var(--margin-s);
+  align-items: center;
+  span:nth-child(1)
+  {
+    font-size: var(--text-xl);
+  }
+  > div
+  {
+    flex: 1;
+    text-align: left;
+    p
+    {
+      color: inherit;
+      font-size: var(--text-s);
+      text-align: left;
+      font-weight: 400;
+    }
+
+  }
+  &.button--secondary
+  {
+    gap: var(--margin-l);
+    border-radius: var(--margin-s);
+    padding: var(--margin-m);
+    background-color: var(--bg-200);
+    border-left: var(--text-xxs) solid var(--primary-100);
+    color: var(--text-100);
+
+    h3
+    {
+      color: var(--text-200);
+    }
+    span:nth-child(1)
+    {
+      font-size: var(--text-l);
+      background-color: var(--primary-100);
+      border-radius: 50%;
+      height: var(--text-xxxxl);
+      border-radius: 50%;
+      width: var(--text-xxxxl);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--bg-100);
+
+    }
+    span:nth-child(3)
+    {
+      font-size: var(--text-m);
+      color: var(--text-200);
+
+
+    }
+  }
+  &.button--light
+  {
+    border-color: var(--primary-200);
+    color: var(--primary-200)
+  }
+  &.button--icon
+  {
+    $size: calc(var(--margin-sm) * 2 + var(--text-l));
+    padding: var(--margin-sm);
+    font-size: var(--text-m);
+    width: $size ;
+    height: $size;
+    border-radius: var(--margin-sm);
+  }
+  &:disabled
+  {
+    pointer-events: none;
+    opacity: .5;
+    filter: grayscale(1);
+  }
+  &:active
+  {
+    border: 2px solid var(--primary-100);
+    background-color: var(--primary-200);
+    color: var(--primary-300);
+    *
+    {
+      color: inherit
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<div (click)="show = !show" #dropdown>
+  <input type="text" [value]="defaultOption">
+  <ul *ngIf="show">
+    <ng-container *ngFor="let option of options">
+      <li (click)="optionSelected(option)">
+        {{ option }}
+      </li>
+    </ng-container>
+  </ul>
+</div>

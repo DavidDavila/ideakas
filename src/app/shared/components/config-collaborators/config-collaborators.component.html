@@ -1,0 +1,28 @@
+<h4>Mi equipo</h4>
+<p *ngIf="!collaborators.length">Aún no has añadido miembros a tu equipo</p>
+<ul>
+  <ng-container *ngFor="let collaborator of collaborators">
+    <li>
+      <p>{{collaborator.email}}</p>
+      <span>{{collaborator.role}}</span>
+      <button class="button--secondary button--icon button--light" (click)="removeCollaborator(collaborator.email)">
+        <i class="far fa-user-times"></i>
+      </button>
+    </li>
+  </ng-container>
+
+  <li>
+    <div>
+      <input type="email" placeholder="Introduce el email" [(ngModel)]="currentCollaborator.email">
+    </div>
+
+    <app-dropdown [options]="roles" [defaultOption]="currentCollaborator.role" (onOptionSelected)="
+      onOptionSelected($event)"></app-dropdown>
+
+
+    <button class=" button--secondary  button--icon" [disabled]="currentCollaborator.email === ''"
+      (click)="addCollaborator()">
+      <i class="far fa-user-plus"></i>
+    </button>
+  </li>
+</ul>

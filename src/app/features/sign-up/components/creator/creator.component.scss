@@ -1,0 +1,18 @@
+label
+{
+    margin-bottom: var(--margin-xl);
+    display: flex;
+    gap: var(--margin-s);
+    flex-wrap: wrap;
+    align-items: center;
+    h6
+    {
+        color: var(--primary-100);
+    }
+
+    p
+    {
+        flex: 0 100%;
+        ;
+    }
+}

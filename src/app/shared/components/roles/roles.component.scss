@@ -1,0 +1,33 @@
+   p
+   {
+       font-size: var(--text-s);
+   }
+   header
+   {
+       position: sticky;
+       top: 0;
+       background-color: var(--bg-100);
+       padding: var(--margin-m) 0;
+
+   }
+   ul
+   {
+       margin: var(--margin-xl) 0;
+       padding-left: var(--margin-s);
+       li
+       {
+           margin: var(--margin-l) 0;
+           h5
+           {
+               display: inline-flex;
+               gap: var(--margin-s);
+               justify-content: center;
+               align-items: center;
+               h6
+               {
+                   margin-bottom: 0;
+               }
+           }
+
+       }
+   }

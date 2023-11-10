@@ -1,0 +1,14 @@
+ label
+ {
+     display: flex;
+     gap: var(--margin-s);
+     flex-wrap: wrap;
+     align-items: center;
+
+
+     p
+     {
+         flex: 0 100%;
+
+     }
+ }

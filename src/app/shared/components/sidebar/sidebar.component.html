@@ -1,0 +1,12 @@
+<div class="side-bar" (click)="checkIfClose($event)">
+  <article #sidebar>
+    <a (click)="closeSlide()" class="back">
+      <i class="far fa-times"></i>
+      Cerrar
+    </a>
+    <div>
+      <ng-content></ng-content>
+    </div>
+
+  </article>
+</div>

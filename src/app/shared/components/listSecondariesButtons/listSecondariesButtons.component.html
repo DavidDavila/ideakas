@@ -1,0 +1,22 @@
+<ul>
+  <ng-container *ngFor="let button of buttons ">
+    <li>
+      <button class="button--secondary" (click)="buttonClicked(button.title)">
+        <span>
+          <i [class]="button.icon"></i>
+        </span>
+        <div>
+          <ng-container *ngIf="button.desc; else onlyTitle">
+            <h5>{{button.title}}</h5>
+            <p>{{button.desc}}</p>
+          </ng-container>
+          <ng-template #onlyTitle>
+            <h5>{{button.title}}</h5>
+          </ng-template>
+        </div>
+        <span>
+          <i class="far fa-long-arrow-right"></i></span>
+      </button>
+    </li>
+  </ng-container>
+</ul>

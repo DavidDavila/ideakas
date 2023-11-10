@@ -1,0 +1,63 @@
+@keyframes progress
+{
+    from
+    {
+        width: 0%;
+    }
+    to
+    {
+        width: 100%;
+    }
+
+}
+section
+{
+    height: 100vb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    article
+    {
+        h1
+        {
+            font-family: "Roboto Flex";
+            color: var(--text-100);
+            span
+            {
+                display: block;
+                color: var(--primary-100);
+                font-size: var(--text-full);
+                font-family: "Roboto Slab";
+            }
+        }
+        h5
+        {
+            text-align: center;
+        }
+    }
+
+    $progress-bar-height: var(--margin-m);
+    &::after,
+    &::before
+    {
+        content: '';
+        height: $progress-bar-height;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+    &::before
+    {
+        background: var(--bg-200);
+        width: 100%;
+    }
+    &::after
+    {
+        background: var(--primary-100);
+        width: 100%;
+        animation-fill-mode: forwards;
+        animation: progress 3s ease-in-out;
+    }
+}

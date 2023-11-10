@@ -1,0 +1,30 @@
+<article>
+  <div>
+    <h2>
+      Este el es primer paso de tu viaje
+    </h2>
+
+  </div>
+</article>
+<p>
+  ¿Qué rol vas a tomar en tu startup? <br>
+</p>
+<div>
+  <ng-container *ngFor="let role of roles">
+    <input type="checkbox" [id]="role.name" [value]="role.name" [checked]="role.checked"
+      (change)="selectRole(role.name,!role.checked)">
+    <label [for]="role.name">
+      <h4>{{role.mean}}</h4>
+      <h6>{{role.name}}</h6>
+      <p>{{role.description}}</p>
+
+    </label>
+  </ng-container>
+</div>
+<footer>
+  <button (click)="onContinue()" [routerLink]="['need']" routerLinkActive="router-link-active"
+    [disabled]="buttonDisabled">Continuar</button>
+
+</footer>
+<!-- <p>Conéctate con LinkedIn para unirte a la comunidad de emprendedores y colaboradores de Ideakas</p>
+<linkedin-button></linkedin-button> -->

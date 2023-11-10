@@ -1,0 +1,12 @@
+$linkedin-color: #0077b5;
+
+button {
+    display: inline-flex;
+    gap: var(--margin-m);
+    align-items: center;
+    justify-content: center;
+
+    i {
+        font-size: var(--text-m);
+    }
+}

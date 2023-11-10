@@ -1,0 +1,15 @@
+<footer id="menu">
+  <ul>
+    <ng-container *ngFor="let route of routes">
+      <li>
+        <a [routerLink]="[route.path]" routerLinkActive="selected">
+          <i [class]="route.icon + ' normal'"></i>
+          <i [class]="route.iconSelected + ' selected'"></i>
+          <span>
+            {{route.title}}
+          </span>
+        </a>
+      </li>
+    </ng-container>
+  </ul>
+</footer>

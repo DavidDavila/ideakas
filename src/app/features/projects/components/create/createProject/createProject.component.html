@@ -1,0 +1,23 @@
+<section>
+  <h3>Crear Proyecto</h3>
+  <p>Tu proyecto será privado y nadie podrá verlo</p>
+  <div>
+    <label>¿Cuál es el nombre de tu proyecto?</label>
+    <input type="text" [(ngModel)]="newProject.name" />
+  </div>
+
+
+  <div class="textarea">
+    <label>¿Qué problema has detectado?</label>
+    <textarea name="" id="" [(ngModel)]="newProject.mission"></textarea>
+  </div>
+  <div class="textarea">
+    <label>¿Qué solución propones?</label>
+    <textarea name="" id="" [(ngModel)]="newProject.vission"></textarea>
+  </div>
+  <div>
+    <label>¿Cómo vas a participar en la idea?</label>
+    <app-dropdown [options]="roles" [defaultOption]="role" (onOptionSelected)="onOptionSelected($event)"></app-dropdown>
+  </div>
+  <div><button (click)="saveProject()">Guardar proyecto</button></div>
+</section>

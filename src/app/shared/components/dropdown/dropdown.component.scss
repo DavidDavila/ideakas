@@ -1,0 +1,30 @@
+div
+{
+    position: relative;
+
+    input
+    {
+        pointer-events: none;
+        padding: var(--margin-sm) var(--margin-s);
+        text-align: center;
+    }
+    ul
+    {
+        background-color: var(--bg-100);
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        border: 1px solid var(--text-100);
+        border: 1px solid var(--bg-300);
+        border-radius: var(--margin-xs);
+        padding: var(--margin-sm) var(--margin-m);
+        width: 100%;
+        font-size: inherit;
+        font-weight: bold;
+        color: var(--text-100);
+        > li
+        {
+            margin-bottom: var(--margin-m);
+        }
+    }
+}

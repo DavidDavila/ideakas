@@ -1,0 +1,9 @@
+header
+{
+    display: flex;
+    gap: var(--margin-m);
+    .input-container
+    {
+        flex: 1
+    }
+}

@@ -1,0 +1,22 @@
+@import "components/step-container";
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding: var(--padding-sign-up) var(--padding-sign-up) 0;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-flex;
+    gap: 16px;
+    align-items: center;
+  }
+}

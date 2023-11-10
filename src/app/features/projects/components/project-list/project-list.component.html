@@ -1,0 +1,20 @@
+<article>
+    <app-search-project>
+
+    </app-search-project>
+    <h3 *ngIf="!projectList.length;else hasProjects">
+        <i class="fad fa-folder-open"></i>
+        No hay proyectos aún
+    </h3>
+    <ng-template #hasProjects>
+        <ul>
+
+            <ng-container *ngFor="let project of projectList">
+                <li>
+                    <app-project-box [data]="project"></app-project-box>
+                </li>
+            </ng-container>
+        </ul>
+    </ng-template>
+
+</article>

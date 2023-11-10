@@ -1,0 +1,25 @@
+@import '/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
+@font-face
+{
+  font-family: 'FontAwesome-regular';
+  src: url('~node_modules/@fortawesome/fontawesome-free/fonts/fa-regular-400.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face
+{
+  font-family: 'FontAwesome-solid';
+  src: url('~node_modules/@fortawesome/fontawesome-free/fonts/fa-regular-900.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa-regular
+{
+  font-family: "FontAwesome-regular";
+}
+
+.fa-regular
+{
+  font-family: "FontAwesome-solid";
+}

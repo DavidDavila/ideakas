@@ -1,0 +1,45 @@
+p
+{
+    font-size: var(--text-s);
+}
+ul
+{
+    margin: var(--margin-m) 0;
+    li
+    {
+        display: inline-flex;
+        gap: var(--margin-m);
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+        color: var(--text-100);
+        font-size: var(--text-m);
+        margin-bottom: var(--margin-s);
+        > p,
+        > div
+        {
+            flex: 8;
+            font-weight: 500;
+            font-size: var(--text-m);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        > span,
+        > app-dropdown
+        {
+            flex: 3;
+            color: var(--text-100);
+            font-size: var(--text-s);
+
+            text-align: center;
+            display: block;
+        }
+        > button
+        {
+            flex: 1;
+        }
+
+    }
+}

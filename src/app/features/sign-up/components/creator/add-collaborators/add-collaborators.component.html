@@ -1,0 +1,16 @@
+<article>
+  <div>
+    <h2>
+      Presenta al equipo ganador
+    </h2>
+    <p>
+      Se añadirán a tu red de contactos pero no se mandará ninguna invitación
+  </div>
+</article>
+<div>
+  <app-config-collaborators (hasCollaborators)="collaborators = $event"></app-config-collaborators>
+</div>
+<footer>
+  <button [routerLink]="['/welcome']" routerLinkActive="router-link-active" [disabled]="!collaborators">Empezar</button>
+
+</footer>

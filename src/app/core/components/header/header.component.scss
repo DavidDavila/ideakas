@@ -1,0 +1,46 @@
+#header
+{
+    padding: calc(var(--padding-page) / 1.5) var(--padding-page);
+    display: flex;
+    flex-direction: column;
+    > section
+    {
+        display: inline-flex;
+        gap: var(-padding-m);
+        align-items: center;
+        justify-content: center;
+        div.img_container
+        {
+            width: var(--text-xxxxl);
+            height: var(--text-xxxxl);
+            border-radius: 50%;
+            img
+            {
+                border-radius: 50%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        h1
+        {
+            flex: 1;
+            text-align: center;
+        }
+        .notifications_container
+        {
+            a
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                font-size: var(--text-xl);
+                width: var(--text-xxxxl);
+                height: var(--text-xxxxl);
+                border-radius: 50%;
+
+            }
+        }
+    }
+
+}
