@@ -11,7 +11,7 @@ import { ProjectInfoT, ProjectT } from '../../../types/projects.types';
 })
 export class CreateProjectComponent {
   roles: string[] = Object.values(RolesEnum);
-  role: RolesEnum = RolesEnum.CTO;
+  role: RolesEnum = RolesEnum.CEO;
   @Output() hasCollaborators = new EventEmitter<boolean>();
   collaborators!: BasicCollaboratorT[];
   newProject: ProjectInfoT & ProjectT = {

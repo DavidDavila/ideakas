@@ -14,14 +14,16 @@ main
             flex-direction: column;
             background-color: var(--bg-200);
             border-radius: var(--margin-xl) var(--margin-xl) 0 0;
+
+            position: relative;
+            z-index: 2;
             > section
             {
 
                 flex: 1;
                 display: flex;
                 flex-direction: column;
-                padding: var(--padding-page);
-                max-height: calc(100vb - var(--padding-page) - var(--margin-s) * 2 - var(--text-h1));
+                max-height: calc(100vb - var(--padding-page) * 3 - var(--padding-page) / 1.5 * 2 - var(--margin-sm) * 2 - var(--text-l));
                 overflow: auto;
 
                 justify-content: space-between;
@@ -30,7 +32,7 @@ main
             }
             p
             {
-                line-height: 1;
+                line-height: 1.2;
             }
         }
     }

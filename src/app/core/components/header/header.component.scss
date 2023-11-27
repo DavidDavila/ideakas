@@ -3,24 +3,16 @@
     padding: calc(var(--padding-page) / 1.5) var(--padding-page);
     display: flex;
     flex-direction: column;
+    background-color: var(--bg-100);
+    position: relative;
+
     > section
     {
         display: inline-flex;
         gap: var(-padding-m);
         align-items: center;
         justify-content: center;
-        div.img_container
-        {
-            width: var(--text-xxxxl);
-            height: var(--text-xxxxl);
-            border-radius: 50%;
-            img
-            {
-                border-radius: 50%;
-                width: 100%;
-                object-fit: cover;
-            }
-        }
+
         h1
         {
             flex: 1;

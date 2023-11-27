@@ -17,6 +17,14 @@ export class ProjectsService {
         name: 'Mi proyecto 2',
         id: 2,
       },
+      {
+        name: 'Mi proyecto 3',
+        id: 3,
+      },
+      {
+        name: 'Mi proyecto 4',
+        id: 4,
+      },
     ];
   }
   saveProject(project: ProjectT & ProjectInfoT, role: RolesEnum) {

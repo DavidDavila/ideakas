@@ -20,8 +20,7 @@
       onOptionSelected($event)"></app-dropdown>
 
 
-    <button class=" button--secondary  button--icon" [disabled]="currentCollaborator.email === ''"
-      (click)="addCollaborator()">
+    <button class=" button--icon" [disabled]="currentCollaborator.email === ''" (click)="addCollaborator()">
       <i class="far fa-user-plus"></i>
     </button>
   </li>

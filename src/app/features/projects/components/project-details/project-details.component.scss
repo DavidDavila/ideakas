@@ -1,0 +1,14 @@
+@import 'components/card';
+
+section
+{
+    padding: var(--padding-page) var(--padding-page) calc(var(--padding-page) * 0.5);
+    .card
+    {
+        margin: var(--margin-m) 0;
+        p
+        {
+            margin-bottom: var(--margin-s);
+        }
+    }
+}

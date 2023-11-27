@@ -1,6 +1,2 @@
-div
-{
-    border-radius: var(--margin-m);
-    padding: var(--margin-m);
-    background-color: var(--bg-100);
-}
+@import 'components/chip';
+@import 'components/card';

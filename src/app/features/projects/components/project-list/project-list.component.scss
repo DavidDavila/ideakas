@@ -5,10 +5,14 @@
      height: 100%;
      app-search-project
      {
-         margin-bottom: var(--padding-page);
+
+         position: sticky;
+         top: calc(var(--padding-page) * -0.5);
+         z-index: 1;
      }
      h3
      {
+         padding: var(--padding-page);
          flex: 1;
          --fa-primary-color: var(--accent-200);
          --fa-secondary-color: var(--accent-100);
@@ -30,9 +34,10 @@
      }
      ul
      {
+         padding: calc(var(--padding-page) * 0.5) var(--padding-page) var(--padding-page);
          li
          {
-             margin-bottom: var(--margin-m);
+             margin-bottom: var(--margin-l);
          }
      }
  }

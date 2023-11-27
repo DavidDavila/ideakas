@@ -10,7 +10,7 @@
 <div>
   <app-config-collaborators (hasCollaborators)="collaborators = $event"></app-config-collaborators>
 </div>
-<footer>
+<footer class="footer-sign-up">
   <button [routerLink]="['/welcome']" routerLinkActive="router-link-active" [disabled]="!collaborators">Empezar</button>
 
 </footer>

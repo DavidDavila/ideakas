@@ -1,11 +1,56 @@
-<div>
-  <h5>{{data.name}}</h5>
-  <dl>
-    <dt>Financiación</dt>
-    <dd>0,00 €</dd>
-    <dt>Equipo</dt>
-    <dd>6 personas</dd>
-    <dt>Objetivos</dt>
-    <dd></dd>
-  </dl>
+<div class="card" [routerLink]="[data.id]" routerLinkActive="router-link-active">
+  <header>
+    <h4>{{data.name}}</h4>
+    <span class="chip">Público</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugiat iure, facilis nobis eius, sed ad, est
+      hic temporibus ullam quae asperiores. Hic, distinctio nihil ipsam nostrum velit inventore libero!
+    </p>
+  </header>
+  <section>
+    <article>
+      <ul>
+        <li>
+          <span>Financiación</span>
+          <p>0,00 €</p>
+        </li>
+      </ul>
+      <div class="chart">
+        <app-chart [type]="'doughnut'" [centerText]="'30%'"></app-chart>
+      </div>
+    </article>
+
+    <footer>
+      <span class="notification">
+        3 objetivos pendientes
+      </span>
+      <ul>
+        <li>
+          <div class="img_container">
+            <a>
+              <img
+                src="https://media.licdn.com/dms/image/C4E03AQF5OASR8Vre7A/profile-displayphoto-shrink_200_200/0/1644925850857?e=1704931200&v=beta&t=KnjM8tDoIhSUWn2BiGbB_VOeK2lM5ASrOquw3ysYE5w"
+                alt="">
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="img_container">
+            <a>
+              <img
+                src="https://media.licdn.com/dms/image/C4E03AQF5OASR8Vre7A/profile-displayphoto-shrink_200_200/0/1644925850857?e=1704931200&v=beta&t=KnjM8tDoIhSUWn2BiGbB_VOeK2lM5ASrOquw3ysYE5w"
+                alt="">
+            </a>
+          </div>
+        </li>
+        <li>
+
+          <a>
+            + 3
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </section>
+
+
 </div>

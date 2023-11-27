@@ -56,7 +56,10 @@ footer,
 header,
 nav,
 section,
-video
+video,
+dd,
+dt,
+dl
 {
   margin: 0;
   padding: 0;
@@ -145,5 +148,4 @@ b
   outline: none;
   text-rendering: optimizeLegibility;
   font-family: "Roboto Flex";
-  ;
 }
